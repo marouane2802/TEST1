@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSAM Casablanca - Prof. Dr. Abdelaziz Timesli</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* En-tête */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .header img {
+            width: 120px; /* Taille du logo plus grande */
+            height: auto;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .header .title {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        /* Conteneur */
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        /* Colonne gauche et droite */
+        .left-column {
+            flex: 1;
+            min-width: 280px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .right-column {
+            flex: 3;
+            min-width: 400px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        /* Titres des sections */
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        /* Liste et style des liens */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        a {
+            color: #003366;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #005bb5;
+        }
+
+        /* Boîtes */
+        .box {
+            background-color: #f9fafc;
+            border-left: 4px solid #003366;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Publications */
+        .publication-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #d9d9d9;
+        }
+
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Bouton */
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #003366;
+            color: #ffffff;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .header {
+                flex-direction: column;
+                padding: 30px;
+            }
+
+            .header img {
+                width: 150px; /* Logo plus grand pour mobile */
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header class="header">
+        <img src="logo.png" alt="Logo ENSAM">
+        <div class="title">Prof. Dr. Abdelaziz Timesli</div>
+    </header>
+
+    <p style="text-align:center; color: #666; margin: 10px 0;">
+        Hassan II University of Casablanca · National Higher School of Arts and Crafts of Casablanca
+    </p>
+
+    <!-- Conteneur principal -->
+    <div class="container">
+
+        <!-- Colonne gauche -->
+        <div class="left-column">
+            <h2 class="section-title">Courses</h2>
+            <p>Vibration dynamics</p>
+            <ul>
+                <li><a href="#">Chapter 1</a></li>
+                <li><a href="#">Chapter 2</a></li>
+                <li><a href="#">Chapter 3</a></li>
+                <li><a href="#">Chapter 4</a></li>
+            </ul>
+            <p><a href="#">Numerical modeling using finite elements method</a></p>
+
+            <h2 class="section-title">Exercises</h2>
+            <p>Systems dynamic</p>
+            <ul>
+                <li><a href="#">TD 1</a></li>
+                <li><a href="#">TD 2</a></li>
+                <li><a href="#">TD 3</a></li>
+            </ul>
+
+            <h2 class="section-title">Research Group</h2>
+            <ul>
+                <li>HASSOUNA Saad</li>
+                <li>BOUCHAOUATA Youssef</li>
+            </ul>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="right-column">
+            <div class="box">
+                <h2 class="section-title">Research Interests</h2>
+                <ul>
+                    <li>Dynamical systems</li>
+                    <li>Computational mechanics</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2 class="section-title">Contact</h2>
+                <p>50 Avenue Nile Sidi Othman, Casablanca 20670</p>
+                <p>Phone: (+212) 6 54 70 71 72</p>
+                <p>Email: <a href="mailto:ABDELAZIZ.TIMESLI@univh2c.ma">ABDELAZIZ.TIMESLI@univh2c.ma</a></p>
+                <a class="button" href="https://orcid.org/0000-0001-8226-4293" target="_blank">View ORCID Profile</a>
+            </div>
+
+            <div class="box">
+                <h2 class="section-title">Publications</h2>
+                <div class="publication-item">
+                    <a href="#">Analysis of inhomogeneous structures...</a>
+                    <p>Computers and Mathematics with Applications, 2024</p>
+                </div>
+                <div class="publication-item">
+                    <a href="#">A meshfree TSDT-based approach for modeling...</a>
+                    <p>Mathematical Modeling and Computing, 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
